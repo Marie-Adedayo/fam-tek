@@ -1,23 +1,26 @@
 import Home from './pages/Home'
 import ProductDetail from './pages/ProductDetail'
-import Checkout from './pages/Checkout'
+import Catalog from './components/Catalog'
 import Dashboard from './pages/Dashboard'
 import Search from './pages/Search'
 import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 
 export default function App(){
   return (
-    <div>        
+    <div>   
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetail />} />
-            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/catalog" element={<Catalog />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/search/:q" element={<Search />} />
             <Route path="/category/:name" element={<Home />} />
           </Routes>
-      
+          <Footer />
       </div>
   
   )

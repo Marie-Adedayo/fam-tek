@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Search } from "lucide-react"; 
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function Navbar() {
     { name: "Catalog", href: "/catalog" },
     { name: "Deals", href: "/deals" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "https://wa.me/2347061177238" },
   ];
 
   const handleSearch = (e: React.FormEvent) => {
@@ -25,13 +26,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <Link to="/" className="flex-shrink-0">
             <img 
                 src="/Images/famtek_logo.png" 
                 alt="logo" 
                 className="w-14 h-14"
             />
-          </div>
+          </Link>
 
           {/* Search Bar (hidden on small screens) */}
           <form

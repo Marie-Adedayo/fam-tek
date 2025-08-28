@@ -19,7 +19,7 @@ export default function Footer() {
         {/* Right side - Social Media */}
         <div className="flex gap-4">
           <a
-            href="https://facebook.com/yourpage"
+            href="https://web.facebook.com/search/top?q=fam-tek%20gadgets"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white/10 hover:bg-blue-600 transition"
@@ -35,7 +35,7 @@ export default function Footer() {
             <FaTwitter className="w-4 h-4" />
           </a>
           <a
-            href="https://instagram.com/yourpage"
+            href="https://www.instagram.com/famtek_global_ltd/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-white/10 hover:bg-pink-500 transition"
