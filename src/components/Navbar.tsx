@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-black shadow-md fixed w-full top-0 left-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-3 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
           {/* Logo */}
@@ -64,14 +64,14 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-3">
+          <div className="md:hidden flex items-start pr-3">
             {/* Small screen search icon */}
-            <button onClick={handleSearch} className="text-gray-700 hover:text-blue-600">
+            {/* <button onClick={handleSearch} className="text-gray-700 hover:text-blue-600">
               <Search size={22} />
-            </button>
+            </button> */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="text-white hover:text-red-800 focus:outline-none"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
