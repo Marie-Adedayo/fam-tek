@@ -1,4 +1,4 @@
-import { useCart } from '../store/CartContext'
+import { useCart } from '../context/CartContext'
 import { ngn } from '../utlis/currency'
 import { PaystackButton, FlutterwaveButton } from '../components/PaymentButttons'
 
@@ -7,7 +7,7 @@ export default function Checkout(){
   const email = 'customer@example.com' // replace with real form later
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-6">
+    <div className="max-w-5xl mx-auto px-4 py-8 grid md:grid-cols-3 mt-20 gap-6">
       <div className="md:col-span-2 space-y-3">
         <h2 className="text-2xl font-bold mb-2">Checkout</h2>
         {items.length === 0 ? (
